@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="320.0" prefWidth="380.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label fx:id="lblTempo" layoutX="55.0" layoutY="109.0" text="00:00:00" textFill="RED">
+         <font>
+            <Font name="OCR A Extended" size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="109.0" text="00:00:00" textFill="#ffffff27">
+         <font>
+            <Font name="OCR A Extended" size="56.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="33.0" layoutX="132.0" layoutY="179.0" onMouseClicked="#iniciarPausar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/iniciar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="33.0" layoutX="216.0" layoutY="179.0" onMouseClicked="#recomecar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/zerar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
